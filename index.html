@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv=”refresh” content=”15″>
+        <link rel="stylesheet" href="css/style.css?rnd=132">
+        
+        <title>Simple Encrypt</title>
+    </head>
+    <body>
+        <form action="">
+            <main id="container">
+                <div id="header">
+                    <h1 id="title">Encrypt Plain Text <br>with AES</h1>
+                </div>
+                <div id="msg-box">
+                    <textarea id="msg-input" type=text placeholder="Enter your secret message or cipher text..."></textarea>
+                </div>
+                <div id="pass-box">
+                    <label for="pass-input">Enter Key :</label>
+                    <input id="pass-input" type="password" placeholder="Key more than 3 letters*">
+                </div>
+                <div id="buttons">
+                    <button class="btn btn-encrypt" type="submit">Encrypt</button>
+                    <button class="btn btn-decrypt" type="submit">Decrypt</button>
+                    <!-- <button class="btn btn-file"><a href="/file_encryption/file.html">For File Encryption</a></button> -->
+                </div>
+
+            </main>
+        </form>
+        
+        <!-- FOR JS REFRESH -->
+        </script>
+        <script type="text/javascript" language="javascript">  
+            var versionUpdate = (new Date()).getTime();  
+            var script = document.createElement("script");  
+            script.type = "text/javascript";  
+            script.src = "js/app.js?v=" + versionUpdate;  
+            document.body.appendChild(script);  
+        </script> 
+        <!-- FOR CSS REFRESH -->
+        <!-- <script>
+            (function() {
+                var h, a, f;
+                a = document.getElementsByTagName('link');
+                for (h = 0; h < a.length; h++) {
+                    f = a[h];
+                    if (f.rel.toLowerCase().match(/stylesheet/) && f.href) {
+                    var g = f.href.replace(/(&|\?)rnd=\d+/, '');
+                    f.href = g + (g.match(/\?/) ? '&' : '?');
+                    f.href += 'rnd=' + (new Date().valueOf());
+                    }
+                } // for
+                })()
+
+        </script>  -->
+    </body>
+
+    <script src="encryption_algo/aes.js"></script>
+    <script src="encryption_algo/sha256.js"></script>
+    <script src="encryption_algo/rabbit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</html>

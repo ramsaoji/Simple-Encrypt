@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    font-family: 'Raleway', sans-serif;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 550px;
+    width: 550px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+h1{
+    text-align: center;
+    font-size: 38px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+::placeholder {
+    color: rgb(92, 92, 92);
+    opacity: 1; /* Firefox */
+  }
+#msg-box{
+    margin-top: 50px;
+    position: relative;
+}
+#msg-box textarea:hover {
+	box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#msg-box textarea:focus {
+	outline:0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 70px 0px;
+    border: 1px solid #9599E2; */
+}
+#msg-box textarea{
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    margin-top: -15px;
+    border-radius: 7px;
+    background-color: #F7F7F7;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 150px;
+    resize: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 24px 50px 0px;
+    overflow:auto;
+}
+#msg-box textarea::-webkit-scrollbar {
+    display: none;
+}
+/* .btn-copy{
+    position: absolute;
+    background: none;
+    color: rgb(143, 143, 143);
+    opacity: 1;
+    right: 4px;
+    z-index: 1;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    top: -10px;
+    cursor: pointer;
+    transform: translateX(2px);
+   
+}
+.btn-copy:focus{
+    color: none;
+    outline: 0;
+} */
+#pass-box label{
+    font-size:20px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+#pass-box{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+}
+#pass-input:focus {
+	outline:0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 150px 0px;
+    border: 1px solid #9599E2; */
+
+}
+#pass-input:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#pass-input{
+    font-family: 'Raleway', sans-serif;
+    background-color: #F7F7F7;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 72px 100px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-left: 15px;
+    height: 30px;
+    width: 60%;
+}
+
+#buttons{
+    margin-top: 10%;
+}
+.btn{
+    font-size: 12px;
+    /* padding: 5px; */
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1.5px rgba(0,0,0,0.3);
+    font-weight: bold;
+    height: 35px;
+    width:90px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 8px 0px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn-encrypt{
+    background-color:#92cd84;
+    border: 1px solid #7CAD70;
+}
+.btn-decrypt{
+    background-color:#e661b7;
+    border: 1px solid #D65AAA ;
+    margin-left: 10px;
+}
+.btn-file{
+    height: 35px;
+    width:40%;
+    border: 1px solid #6879B8;
+    border-radius: 5px;
+    background-color:#798dd7;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 8px 0px;
+    margin-left: 60px;
+}
+.btn-file a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1.5px rgba(0,0,0,0.3);
+    font-size: 12px;
+}
+
+/* --------------MOBILE VIEW------------------ */
+
+@media (max-width: 767px){
+    body{
+    background-color: #50AFDF ;
+    background-image: linear-gradient(135deg, #50AFDF  0%, #8489DC  100%);
+    }
+
+    #container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 550px;
+        width: 80%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #50AFDF ;
+        background-image: linear-gradient(135deg, #50AFDF  0%, #8489DC 100%);
+    }
+    h1{
+        text-align: center;
+        font-size: 26px;
+    }
+    #msg-box{
+        margin-top: 50px;
+    }
+    #msg-box textarea:focus{
+        outline: 0;
+    }
+    #msg-box textarea{
+        width: 100%;
+        font-size: 12px;
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 7px;
+        padding-bottom: 150px;
+        resize: none;
+        /* overflow: hidden; */
+    }
+    #pass-box label{
+        font-size: 15px;
+    }
+    #pass-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #pass-input{
+        border-radius: 7px;
+        font-size: 12px;
+        padding-left: 8px;
+        margin-top: 15px;
+        margin-left: 0px;
+        height: 30px;
+        width: 100%;
+    }
+    #buttons{
+        margin-top: 30px;
+    }
+    .btn{
+        height: 30px;
+        font-size: 12px;
+    }
+    .btn-file{
+        display: block;
+        height: 30px;
+        width: 195px;
+        border-radius: 5px;
+        margin-left: 0px;
+        margin-top: 20px;
+
+    }
+    .btn-file a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
